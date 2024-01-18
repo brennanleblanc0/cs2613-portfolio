@@ -1,0 +1,18 @@
+#lang racket
+
+(define (fibonacci x)
+  (define (iter fib1 fib2 i)
+    (cond
+      [(= 1 i) fib2]
+      [else (iter fib2 (+ fib1 fib2) (- i 1))]))
+  (cond
+    [(= 1 x) 0]
+    [else (iter 0 1 x)]))
+
+(define (larger-rectangle l-1 w-1 l-2 w-2)
+  (define a1 (* l-1 w-1))
+  (define a2 (* l-2 w-2))
+  (cond
+    [(> a1 a2) -1]
+    [(< a1 a2) 1]
+    [(= a1 a2) 0]))
