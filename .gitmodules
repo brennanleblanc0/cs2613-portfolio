@@ -7,3 +7,6 @@
 [submodule "Questions/Racket-1"]
 	path = Questions/Racket-1
 	url = https://github.com/CS2613-WI24-FR01B/racket-1-brennanleblanc0.git
+[submodule "Questions/Python-1"]
+	path = Questions/Python-1
+	url = https://github.com/CS2613-WI24-FR01B/python-1-brennanleblanc0
