@@ -4,19 +4,24 @@ let calcs = {
     name: new Array(3),
     diff: [0.0,0.0,0.0]
 };
-// TODO: Use try-catch loop
-for (fi = 1; fi <= 4; fi++) {
-    const fileData = fs.readFileSync("calculations".concat(fi, ".json"));
-    const data = JSON.parse(fileData);
-    let trueVal = parseFloat(data.data.calculations[0].calc);
-    for (i = 1; i < 4; i++) {
-        let iVal = parseFloat(data.data.calculations[i].calc);
-        if (fi == 1)
-            calcs.name[i-1] = data.data.calculations[i].performer;
-        calcs.diff[i-1] += (trueVal - iVal >= 0) ? trueVal - iVal : iVal - trueVal;
+let fi = 1
+
+try {
+    while (1) {
+        const fileData = fs.readFileSync("calculations".concat(fi, ".json"));
+        const data = JSON.parse(fileData);
+        let trueVal = parseFloat(data.data.calculations[0].calc);
+        for (i = 1; i < 4; i++) {
+            let iVal = parseFloat(data.data.calculations[i].calc);
+            if (fi == 1)
+                calcs.name[i-1] = data.data.calculations[i].performer;
+            calcs.diff[i-1] += (trueVal - iVal >= 0) ? trueVal - iVal : iVal - trueVal;
+        }
+        fi++;
     }
-}
-for (i = 0; i < 3; i++) {
+} catch (err){fi--}
+
+for (i = 0; i < fi; i++) {
     for (j = 0; j < 2; j++) {
         if (calcs.diff[j] > calcs.diff[j+1]) {
             let temp1 = calcs.diff[j], temp2 = calcs.name[j];
