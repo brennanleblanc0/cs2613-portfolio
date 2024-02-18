@@ -16,3 +16,6 @@
 [submodule "Exploration/EA1"]
 	path = Exploration/EA1
 	url = https://github.com/CS2613-WI24-FR01B/exploration-activity-1-brennanleblanc0.git
+[submodule "Questions/Python-3"]
+	path = Questions/Python-3
+	url = https://github.com/CS2613-WI24-FR01B/python-3-brennanleblanc0
