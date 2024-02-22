@@ -16,3 +16,6 @@
 [submodule "Questions/Python-3"]
 	path = Questions/Python-3
 	url = https://github.com/CS2613-WI24-FR01B/python-3-brennanleblanc0
+[submodule "Questions/Python-2"]
+	path = Questions/Python-2
+	url = https://github.com/CS2613-WI24-FR01B/python-2-brennanleblanc0.git
