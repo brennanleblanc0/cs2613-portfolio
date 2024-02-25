@@ -31,3 +31,6 @@
 [submodule "Questions/JavaScript-3"]
 	path = Questions/JavaScript-3
 	url = https://github.com/CS2613-WI24-FR01B/javascript-3-brennanleblanc0.git
+[submodule "Questions/Octave-3"]
+	path = Questions/Octave-3
+	url = https://github.com/CS2613-WI24-FR01B/octave-3-brennanleblanc0.git
