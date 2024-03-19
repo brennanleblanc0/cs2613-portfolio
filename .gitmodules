@@ -37,3 +37,6 @@
 [submodule "Questions/JavaScript-1"]
 	path = Questions/JavaScript-1
 	url = https://github.com/CS2613-WI24-FR01B/javascript-1-brennanleblanc0.git
+[submodule "Exploration/EA2"]
+	path = Exploration/EA2
+	url = https://github.com/CS2613-WI24-FR01B/exploration-activity-2-brennanleblanc0.git
